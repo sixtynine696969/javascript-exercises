@@ -18,8 +18,13 @@ const power = function(num1, num2) {
 	return num1 ** num2;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  if (num == 0) return 1;
+	let sum = num / num;
+  for (let i = 1; i <= num; i++) {
+    sum *= i;
+  }
+  return sum;
 };
 
 // Do not edit below this line
